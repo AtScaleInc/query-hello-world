@@ -7,7 +7,7 @@ AtScale Query Hello World
 4. run command: 
 
   ```bash
-  $ mvn compile exec:java\
+  $ mvn clean compile exec:java\
     -Dexec.mainClass="com.atscale.engine.examples.helloworld.HelloWorld"\
     -Dexec.args="<atscale engine host> <export table prefix>"
   ```
