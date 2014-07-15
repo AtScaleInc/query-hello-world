@@ -11,7 +11,7 @@ import java.sql.*;
 
 /**
  * Simple example of using the AtScale Engine via JDBC.
- * Example: $ mvn compile exec:java -Dexec.mainClass="com.atscale.engine.examples.helloworld.HelloWorld" -Dexec.args="192.168.99.test_export"
+ * Example: $ mvn clean compile exec:java -Dexec.mainClass="com.atscale.engine.examples.helloworld.HelloWorld" -Dexec.args="192.168.99.test_export"
  * Reference: https://cwiki.apache.org/confluence/display/Hive/HiveServer2+Clients
  */
 public class HelloWorld {
