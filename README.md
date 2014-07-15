@@ -5,6 +5,7 @@ AtScale Query Hello World
 2. move to directory: `$ cd query-hellow-world`
 3. install maven: `$ brew install maven` on mac
 4. run command: 
+
   ```bash
   $ mvn compile exec:java\
     -Dexec.mainClass="com.atscale.api.helloworld.HelloWorld"\
