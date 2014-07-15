@@ -10,12 +10,9 @@ class HelloWorld {
     "FROM `Sample`.`Sales` `Sales`\n" +
     "GROUP BY `Sales`.`Country`";
 
-  private static String SQL_EXPORT =
+  private static String SQL_EXPORT_TEMPLATE =
     "CREATE TABLE %s AS (\n" +
-    "SELECT `Sales`.`Country` AS `country`,\n" +
-    "SUM(`Sales`.`Sales Amount`) AS `sales_amount`\n" +
-    "FROM `Sample`.`Sales` `Sales`\n" +
-    "GROUP BY `Sales`.`Country`\n" +
+    "%s \n" +
     ") WITH DATA";
 
   // $ mvn compile exec:java -Dexec.mainClass="com.atscale.api.helloworld.HelloWorld" -Dexec.args="192.168.99.9 test_export"
@@ -38,7 +35,7 @@ class HelloWorld {
     }
 
     String createTableName = args[1] + "_" + new java.util.Date().getTime();
-    String sqlExport = String.format(SQL_EXPORT, createTableName);
+    String sqlExport = String.format(SQL_EXPORT_TEMPLATE, createTableName, SQL_QUERY);
     System.out.println("\n\nAbout to execute export:\n\n" + sqlExport);
 
     resultSet = statement.executeQuery(sqlExport);
