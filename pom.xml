@@ -2,9 +2,9 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.atscale.api</groupId>
+  <groupId>com.atscale.engine</groupId>
   <artifactId>query-hello-world</artifactId>
-  <version>1.0</version>
+  <version>1.1</version>
   <packaging>jar</packaging>
 
   <dependencies>
@@ -29,12 +29,12 @@
       <repository>
          <id>atscale</id>
          <name>atscale-releases</name>
-         <url>http://artifactory.corp.atscale.com/artifactory/release-local</url>
+         <url>http://artifactory.corp.atscale.com/release-local</url>
       </repository>
       <snapshotRepository>
          <id>atscale</id>
          <name>atscale-snapshots</name>
-         <url>http://artifactory.corp.atscale.com/artifactory/snapshot-local</url>
+         <url>http://artifactory.corp.atscale.com/snapshot-local</url>
       </snapshotRepository>
    </distributionManagement>
 </project>
