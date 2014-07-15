@@ -1,4 +1,4 @@
-package com.atscale.api.helloworld;
+package com.atscale.engine.examples.helloworld;
 
 import java.sql.*;
 
@@ -15,7 +15,7 @@ class HelloWorld {
     "%s \n" +
     ") WITH DATA";
 
-  // $ mvn compile exec:java -Dexec.mainClass="com.atscale.api.helloworld.HelloWorld" -Dexec.args="192.168.99.9 test_export"
+  // $ mvn compile exec:java -Dexec.mainClass="com.atscale.engine.examples.helloworld.HelloWorld" -Dexec.args="192.168.99.9 test_export"
   // Reference: https://cwiki.apache.org/confluence/display/Hive/HiveServer2+Clients
   public static void main(String args[]) throws SQLException, ClassNotFoundException, InterruptedException {
     Class.forName("org.apache.hive.jdbc.HiveDriver");
