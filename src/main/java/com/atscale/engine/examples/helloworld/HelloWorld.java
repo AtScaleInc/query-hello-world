@@ -1,8 +1,20 @@
+/*
+ * Copyright AtScale, Inc. 2014. All Rights Reserved.
+ *
+ * No part of this project or any of its contents may be reproduced, copied,
+ * modified or adapted, without the prior written consent of AtScale, Inc..
+ */
+
 package com.atscale.engine.examples.helloworld;
 
 import java.sql.*;
 
-class HelloWorld {
+/**
+ * Simple example of using the AtScale Engine via JDBC.
+ * Example: $ mvn compile exec:java -Dexec.mainClass="com.atscale.engine.examples.helloworld.HelloWorld" -Dexec.args="192.168.99.test_export"
+ * Reference: https://cwiki.apache.org/confluence/display/Hive/HiveServer2+Clients
+ */
+public class HelloWorld {
 
   private static String SQL_QUERY =
     "SELECT `Sales`.`Country` AS `country`,\n" +
@@ -15,8 +27,6 @@ class HelloWorld {
     "%s \n" +
     ") WITH DATA";
 
-  // $ mvn compile exec:java -Dexec.mainClass="com.atscale.engine.examples.helloworld.HelloWorld" -Dexec.args="192.168.99.9 test_export"
-  // Reference: https://cwiki.apache.org/confluence/display/Hive/HiveServer2+Clients
   public static void main(String args[]) throws SQLException, ClassNotFoundException, InterruptedException {
     Class.forName("org.apache.hive.jdbc.HiveDriver");
 
