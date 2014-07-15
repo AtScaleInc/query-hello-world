@@ -8,6 +8,6 @@ AtScale Query Hello World
 
   ```bash
   $ mvn compile exec:java\
-    -Dexec.mainClass="com.atscale.api.helloworld.HelloWorld"\
+    -Dexec.mainClass="com.atscale.engine.examples.helloworld.HelloWorld"\
     -Dexec.args="<atscale engine host> <export table prefix>"
   ```
