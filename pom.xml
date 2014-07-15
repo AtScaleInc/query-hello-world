@@ -24,4 +24,17 @@
       <version>2.3.0</version>
     </dependency>
   </dependencies>
+
+  <distributionManagement>
+      <repository>
+         <id>atscale</id>
+         <name>atscale-releases</name>
+         <url>http://artifactory.corp.atscale.com/artifactory/release-local</url>
+      </repository>
+      <snapshotRepository>
+         <id>atscale</id>
+         <name>atscale-snapshots</name>
+         <url>http://artifactory.corp.atscale.com/artifactory/snapshot-local</url>
+      </snapshotRepository>
+   </distributionManagement>
 </project>
