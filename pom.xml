@@ -4,7 +4,7 @@
 
   <groupId>com.atscale.engine</groupId>
   <artifactId>query-hello-world</artifactId>
-  <version>1.2</version>
+  <version>1.3</version>
   <packaging>jar</packaging>
 
   <properties>

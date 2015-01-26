@@ -17,10 +17,13 @@ import java.sql.*;
 public class HelloWorld {
 
   private static String SQL_QUERY =
-    "SELECT `Sales`.`Country` AS `country`,\n" +
-    "SUM(`Sales`.`Sales Amount`) AS `sales_amount`\n" +
-    "FROM `Sample`.`Sales` `Sales`\n" +
-    "GROUP BY `Sales`.`Country`";
+    "SELECT " +
+    "`C_53616c657320496e7369676874732043756265`.`Gender` AS `C_6e6f6e655f67656e6465725f6e6b`, " +
+    "SUM(`C_53616c657320496e7369676874732043756265`.`orderquantity`) AS `C_73756d5f6f726465727175616e746974795f6f6b` " +
+    "FROM " +
+    "`Internet Sales Insights`.`sales insights cube` `C_53616c657320496e7369676874732043756265` " +
+    "GROUP BY " +
+    "`C_53616c657320496e7369676874732043756265`.`Gender`";
 
   private static String SQL_EXPORT_TEMPLATE =
     "CREATE TABLE %s AS (\n" +
