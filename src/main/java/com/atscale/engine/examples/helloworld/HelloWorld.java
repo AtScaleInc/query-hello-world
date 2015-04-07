@@ -18,12 +18,8 @@ public class HelloWorld {
 
   private static String SQL_QUERY =
     "SELECT " +
-    "`ISC`.`Gender` AS `Gender`, " +
-    "SUM(`ISC`.`orderquantity1`) AS `Order_Quantity` " +
-    "FROM " +
-    "`Sales Insights`.`Internet Sales Cube` `ISC` " +
-    "GROUP BY " +
-    "`ISC`.`Gender`";
+    "`ISC`.`Gender` AS `Gender`, SUM(`ISC`.`orderquantity1`) AS `Order_Quantity` " +
+    "FROM `Sales Insights`.`Internet Sales Cube` `ISC` GROUP BY `ISC`.`Gender`";
 
   private static String SQL_EXPORT_TEMPLATE =
     "CREATE TABLE %s AS (\n" +
