@@ -11,3 +11,11 @@ AtScale Query Hello World
     -Dexec.mainClass="com.atscale.engine.examples.helloworld.HelloWorld"\
     -Dexec.args="<atscale engine host> <export table prefix>"
   ```
+
+Mac OS X
+========
+If you are missing JAVA_HOME, set it in your terminal
+```bash
+export JAVA_HOME=$(/usr/libexec/java_home)
+```
+or put it in your .bash_profile
