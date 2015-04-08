@@ -1,6 +1,17 @@
 AtScale Query Hello World
 =================
 
+Prerequisites
+==========
+1. Java
+   - Mac: https://www.java.com/en/download/help/mac_install.xml
+   - Windows: https://www.java.com/en/download/help/windows_manual_download.xml
+   - Linux: https://www.java.com/en/download/help/linux_x64_install.xml
+2. Maven: https://maven.apache.org/download.cgi
+
+Running the Example
+======
+
 1. clone repo: `$ git clone git@github.com:AtScaleInc/query-hello-world.git`
 2. move to directory: `$ cd query-hellow-world`
 3. install maven: `$ brew install maven` on mac
