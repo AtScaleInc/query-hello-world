@@ -14,7 +14,7 @@ Prerequisites
 Running the Example
 ======
 
-1. clone repo: `$ git clone git@github.com:AtScaleInc/query-hello-world.git`
+1. clone repo: `$ git clone https://github.com/AtScaleInc/query-hello-world.git`
 2. move to directory: `$ cd query-hello-world`
 3. run command: 
 
